@@ -1,0 +1,261 @@
+/* ==============================
+   1. STYLE GENERAL
+============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #18223f;
+    color: #333;
+    line-height: 1.5;
+    padding: 30px 15px;
+}
+
+/* ==============================
+   2. CONTENEUR PRINCIPAL
+============================== */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ==============================
+   3. EN-TETE
+============================== */
+
+header {
+    background: linear-gradient(120deg, #ed3c59, #c30d3e);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* ==============================
+   4. CONTENU DU FORMULAIRE
+============================== */
+
+form {
+    padding: 30px 38px;
+}
+
+.form-section,
+section {
+    background: #fff;
+    padding: 22px 25px;
+    margin-bottom: 24px;
+    border-left: 5px solid #e83e61;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    color: #202b46;
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+/* ==============================
+   5. MESSAGE D'INFORMATION
+============================== */
+
+.alert,
+.notice,
+.info {
+    background: #fff4ce;
+    border-left: 5px solid #f2b52a;
+    color: #70551b;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+}
+
+/* ==============================
+   6. CHAMPS ET LABELS
+============================== */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #424242;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="range"]):not([type="color"]):not([type="file"]),
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background: white;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #e83e61;
+    box-shadow: 0 0 5px rgba(232, 62, 97, 0.25);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* ==============================
+   7. ORGANISATION DES CHAMPS
+============================== */
+
+.form-row,
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+/* ==============================
+   8. BOUTONS RADIO ET CHECKBOX
+============================== */
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #e83e61;
+    cursor: pointer;
+}
+
+.radio-group,
+.checkbox-group {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 18px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+/* ==============================
+   9. LISTES DE SELECTION
+============================== */
+
+select {
+    cursor: pointer;
+}
+
+/* ==============================
+   10. RANGE ET COULEUR
+============================== */
+
+input[type="range"] {
+    accent-color: #e83e61;
+    cursor: pointer;
+    width: 75%;
+}
+
+input[type="color"] {
+    width: 65px;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ==============================
+   11. TELECHARGEMENT DES FICHIERS
+============================== */
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px dashed #d0d0d0;
+    border-radius: 8px;
+    background: #fafafa;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+/* ==============================
+   12. BOUTON SUBMIT
+============================== */
+
+button[type="submit"],
+input[type="submit"] {
+    display: block;
+    margin: 25px auto 10px;
+    padding: 15px 40px;
+    background: linear-gradient(120deg, #ed3c59, #c30d3e);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   13. RESPONSIVE
+============================== */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    .form-row,
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .form-section,
+    section {
+        padding: 16px;
+    }
+}
